@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Бронирование мест</h1>
+    <div class="arena" id='arena'></div>
+    <div class="arena__tips">
+        Свободно: <div class="arena__tip arena__tip-free"></div>
+        Занято: <div class="arena__tip arena__tip-taken"></div>
+        Выбрано: <div class="arena__tip arena__tip-choosen"></div>
+    </div>
+    <div class="seat__output">
+        <div class="seat__output-head">
+            <h2>Выбранные места:</h2>
+            <span class="seat__output-tip">
+                Двойное нажатие отменит выбор места
+            </span>
+        </div>
+        <div class="seat__output-list" id='output'></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	flex-direction: column;
+}
+.arena {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.sector {
+	width: auto;
+	margin: 20px;
+}
+.sector-head {
+	font-size: 22px;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+.sector__line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sector__line-head {
+	font-weight: 400;
+	font-size: 18px;
+	margin-left: 10px;
+	width: 70px;
+}
+.sector__line-seats {
+	display: flex;
+}
+.sector__seat {
+	width: 25px;
+	height: 25px;
+	background-color: #49cfff;
+	margin: 2px;
+	text-align: center;
+	border-radius: 3px;
+	line-height: 25px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background .3s ease;
+}
+.sector__seat.seat-selected {
+	cursor: default;
+	background-color: #49ff7d;
+}
+.sector__seat.seat-taken {
+	cursor: default;
+	background-color: #919191;
+}
+.seat__output {
+	margin-top: 10px;
+}
+h2 {
+	border-bottom: 2px solid #5e5e5e;
+}
+.seat__output-list {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.seat__output-item {
+	width: auto;
+	text-align: center;
+	padding: 5px;
+	margin: 3px;
+	border-radius: 5px;
+	border: 1px solid #5e5e5e;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.seat__output-item:hover {
+	border: 1px solid #ff4b4b;
+}
+.seat__ouput-text {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.sector__line-number,
+.sector__head-number {
+	font-weight: 500;
+}
+.seat__output-head {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.seat__output-tip {
+	font-size: 12px;
+	color: #ff4b4b;
+}
+.arena__tips {
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0px;
+}
+.arena__tip {
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 0px 8px 0px 5px;
+}
+.arena__tip-taken {
+	background-color:#919191;
+}
+.arena__tip-free {
+	background-color: #49cfff;
+}
+
+.arena__tip-choosen {
+	background-color: #49ff7d;
+}
